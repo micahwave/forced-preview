@@ -73,7 +73,7 @@ class Forced_Preview {
 
 			wp_enqueue_script( 
 				'forced-preview',
-				plugins_url( 'forced-preview' ) . '/js/forced-preview.js',
+				plugins_url( 'js/forced-preview.js', __FILE__ ),
 				array( 'jquery' ),
 				FORCED_PREVIEW_VERSION,
 				true
